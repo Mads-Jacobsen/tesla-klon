@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elbiler, solenergi og ren energi | Tesla Danmark</title>
+  <link rel="icon" type="image/x-icon" href="img/faviconV2.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+  <!-- Header -->
+  <header id="main-header">
+      <nav id="main-nav">
+        <img src="img/image.svg" alt="Main Logo" id="logo">
+        <div class="overlay"></div>
+        <ul id="nav-cars">
+          <li><a href="#">Model S</a></li>
+          <li><a href="#">Model 3</a></li>
+          <li><a href="#">Model X</a></li>
+          <li><a href="#">Model Y</a></li>
+          <li><a href="#">Powerwall</a></li>
+          <li><a href="#">Opladning</a></li>
+        </ul>
+        <ul id="nav-xtra">
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Webshop</a></li>
+          <li><a href="#">Konto</a></li>
+          <li><a href="#" class="openbtn" onclick="openNav()">Menu</a></li>
+        </ul>
+        <a href="#" class="toggle-button" onclick="openBurger()">Menu</a>
+        <!-- Responsive menu  -->
+      <div id="mobile-menu" class="mobile-menu">
+              <div id="mobile-header">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeBurger()">&#10005;</a>
+                </div>
+        <ul id="burger-list">
+         <li><a href="#" onclick="openBiler()">Biler</a></li>
+         <div class="dropdown-content">
+           <ul id="dropdown-biler" class="dropdown-list">
+              <li><a href="http://">Model S</a></li>
+              <li><a href="http://">Model 3</a></li>
+              <li><a href="http://">Model X</a></li>
+             <li><a href="http://">Model Y</a></li>
+           </ul>
+        </div>
+        <li><a href="#" onclick="openEnergi()">Energi</a></li>
+          <div class="dropdown-content">
+            <ul id="dropdown-energi" class="dropdown-list">
+              <li><a href="http://">Powerwall</a></li>
+              <li><a href="http://">Megapack</a></li>
+              <li><a href="http://">Forsyning</a></li>
+             <li><a href="http://">Virksomheder</a></li>
+           </ul>
+          </div>
+        <li><a href="#" onclick="openOpladning()">Opladning</a></li>
+        <div class="dropdown-content">
+          <ul id="dropdown-opladning" class="dropdown-list">
+            <li><a href="http://">Opladning</a></li>
+            <li><a href="http://">Opladning hjemme</a></li>
+            <li><a href="http://">Supercharging</a></li>
+           <li><a href="http://">Trip Planner</a></li>
+         </ul>
+        </div>
+        <li><a href="#">Webshop</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      </div>
+
+    </nav>
+  </header>
+
+    <!-- Side menu -->
+    <div id="side-menu" class="sidepanel">
+        <div id="sidemenu-header">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10005;</a>
+          </div>
+        <ul>
+        <li><a href="#">Biler på lager</a></li>
+        <li><a href="#">Brugte biler</a></li>
+        <li><a href="#">Indbytning</a></li>
+          <li><a href="#">Prøvetur</a></li>
+            <li><a href="#">Firmabiler</a></li>
+        <li><a href="#">Cybertruck</a></li>
+        <li><a href="#">Roadster</a></li>
+        <li><a href="#">Kommerciel energi</a></li>
+        <li><a href="#">Forsyning</a></li>
+        <li><a href="#">Energi</a></li>
+        <li><a href="#">Find os</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Investerarrelationer</a></li>
+        <li><div class="sprog">
+          <i class="fa-solid fa-globe"></i>
+          <a href="#">Danmark</a>
+          <a href="#">Dansk</a>
+        </li>
+        </div>
+      </ul>
+      
+    </div>
+
+    <!-- Section A: Model Y -->
+    <section class="hero-content" id="model-y">
+      <div class="content-start">
+        <h1>Model Y</h1>
+        <p class="underlined"><a href="">Book en prøvetur</a></p>
+      </div>  
+        <div class="content-end">
+          <div class="btn btn-dark"><a href="#">Design din egen</a></div>
+          <div class="btn btn-light"><a href="#">Biler på lager</a></div>
+          <p class="underlined"><a href="#">Læs mere om Tesla for erhverskunder</a></p>
+          <i class="fas fa-angle-down bounce" id="bouncing-arrow"></i>
+        </div>
+    </section>
+    <!-- Section B: Model 3 -->
+  <section class="hero-content" id="model-3">
+    <div class="content-start">
+      <h1>Model 3</h1>
+      <p class="underlined"><a href="">Book en prøvetur</a></p>
+    </div> 
+    <div class="content-end">
+      <div class="btn btn-dark"><a href="#">Design din egen</a></div>
+      <div class="btn btn-light"><a href="#">Biler på lager</a></div>
+      <p>Modtog 5 stjerner i Euro NCAP</p>
+  </div>
+</section>
+    <!-- Section C: Model S -->
+    <section class="hero-content" id="model-s">
+      <div class="content-start">
+        <h1>Model S</h1>
+        <p class="underlined"><a href="">Book en prøvetur</a></p>
+      </div> 
+      <div class="content-end">
+        <div class="btn btn-dark"><a href="#">Design din egen</a></div>
+        <div class="btn btn-light"><a href="#">Biler på lager</a></div>
+        <p class="underlined"><a href="#">Læs mere om Tesla for erhverskunder</a></p>
+    </div>
+  </section>
+      <!-- Section D: Model X -->
+      <section class="hero-content" id="model-x">
+        <div class="content-start">
+          <h1>Model X</h1>
+          <p class="underlined"><a href="">Book en prøvetur</a></p>
+        </div> 
+        <div class="content-end">
+          <div class="btn btn-dark"><a href="#">Design din egen</a></div>
+          <div class="btn btn-light"><a href="#">Biler på lager</a></div>
+          <p class="underlined"><a href="#">Læs mere om Tesla for erhverskunder</a></p>
+      </div>
+    </section>
+  </section>
+  <!-- Section E: Solar & Powerwall -->
+  <section class="hero-content" id="solar-power">
+    <div class="content-start">
+      <h1>Solar og Powerwall</h1>
+      <p>Sæt strøm til alt</p>
+    </div>
+    <div class="content-end">
+      <div class="btn btn-dark"><a href="#">LÆR MER</a></div>
+  </div>
+</section>
+  <!-- Section E: Solar & Powerwall -->
+  <section class="hero-content" id="tilbehor">
+    <h1>Tilbehør</h1>
+    <div class="content-end">
+      <div class="btn btn-dark"><a href="#">køb nu</a></div>
+  </div>
+</section>
+<footer id="main-footer">
+  <ul>
+    <li><a href="#">Tesla &copy; 2022</a></li>
+    <li><a href="#">Fortrolighed & Jura</a></li>
+    <li><a href="#">Kontakt</a></li>
+    <li><a href="#">Karriere</a></li>
+    <li><a href="#">Nyheder</a></li>
+    <li><a href="#">Lokationer</a></li>
+  </ul>
+  </footer>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

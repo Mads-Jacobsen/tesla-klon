@@ -1,0 +1,49 @@
+.underlined a {
+  border-bottom: 1px solid #333;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid #333;
+  }
+}
+
+// Buttons
+
+.btn {
+  padding: 8px 48px;
+  min-width: 264px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 1rem;
+
+  &-dark {
+    background: #3D3F44;
+    a {
+      color: #fff;
+    }
+  }
+
+  &-light {
+    background: #EEEDEB;
+  }
+}
+
+// Icon bounce
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  animation: bounce 1.5s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% { top: 0; }
+  25% { top: -0.8em; }
+  50% { top: -0.2em; }
+  75% { top: -0.8em; }
+  100% { top: 0; }
+}
